@@ -5,28 +5,26 @@ class CBox{
     int height;
 
     //(b)
-    public double volume(double x, double y, double z){
-        double ans = x * y * z;
+    public double volume(){
+        double ans = length * width * height;
         return ans;
     }
     //(c)
-    public double surfaceArea(double x, double y){
-        double ans = x * y * 6;
+    public double surfaceArea(){
+        double ans = length * width * 6;
         return ans;
     }
     //(d)
-    public void showData(int x, int y, int z){
-        System.out.println("box.length= " + x);
-        System.out.println("box.width= " + y);
-        System.out.println("box.height= " + z);
+    public void showData(){
+        System.out.println("box.length= " + length);
+        System.out.println("box.width= " + width);
+        System.out.println("box.height= " + height);
     }
     //(e)
-    public void showAll(int a, int b, int c, double d, double e){
-        System.out.println("box.length= " + a);
-        System.out.println("box.width= " + b);
-        System.out.println("box.height= " + c);
-        System.out.println("box.volume= " + d);
-        System.out.println("box.surfaceArea= " + e);
+    public void showAll(){
+        showData();
+        System.out.println("box.volume= " + volume());
+        System.out.println("box.surfaceArea= " + surfaceArea());
     }
 }
 public class Ex05 {
@@ -37,10 +35,8 @@ public class Ex05 {
         box.width = 1;
         box.height = 1;
 
-        box.showData(box.length, box.width, box.height);
+        box.showData();
         System.out.println("");
-        box.showAll(box.length, box.width, box.height,
-                box.volume(box.length, box.width, box.height),
-                box.surfaceArea(box.length, box.width));
+        box.showAll();
     }
 }
