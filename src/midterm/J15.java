@@ -34,6 +34,7 @@ class CPentagon extends CShape{
 }
 public class J15 {
     public static void main(String[] args){
+        // (c)
         CShape[] obj = new CShape[3];
         obj[0] = new CTriangle();
         obj[1] = new CRect();
