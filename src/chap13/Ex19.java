@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-class ArgumentOutOfBound extends Exception { // (b)
+class ArgumentOutOfBound extends Exception {
 }
 
 public class Ex19 {
